@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'tgbr';
+    src: url('webfont/tg.eot');
+    src: url('webfont/tgd41d.eot?#iefix') format('embedded-opentype'),
+    url('webfont/tg.woff') format('woff'),
+    url('webfont/tg.ttf') format('truetype'),
+    url('webfont/tg.svg#tgbr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Georgia, Times, serif;
+    line-height: 1.6;
+    font-size: 11pt;
+    margin: 0;
+    color: #111;
+    -webkit-text-size-adjust: none;
+    height: 100%;
+
+}
+
+a {
+    color: #959595;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #070707;
+    text-decoration: none;
+}
+
+a.white:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 {
+    display: block;
+    width: 110px;
+    height: 110px;
+    background-image: url('img/saho_theater.png');
+    text-indent: -5000px;
+    background-size: 110px 110px;
+    background-repeat: no-repeat;
+    font-weight: normal;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+h2 {
+    font-family: 'tgbr', Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+#upper {
+    padding: 50px 30px 30px 200px;
+    min-width: 1160px;
+}
+
+
+#lower {
+    border-top: 1px solid #e1e1e1;
+    padding: 30px 30px 30px 200px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 10pt;
+    background-color: #f5f5f5;
+    color: #f5f5f5;
+    min-width: 1160px;
+}
+
+#lowerGUI {
+    border-top: 1px solid #e1e1e1;
+    padding: 30px 30px 30px 200px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 10pt;
+    background-color: #f1f5ff;
+    color: #f1f5ff;
+    min-width: 1160px;
+}
+
+#projects {
+    border-top: 1px solid #e1e1e1;
+    background-color: #f5f5f5;
+    padding: 30px 30px 30px 200px;
+    height: 400px;
+    min-width: 1160px;
+}
+
+#footer {
+    padding: 100px 30px 100px 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 10pt;
+    background-color: #f5f5f5;
+    color: #585858;
+    min-width: 1160px;
+}
+
+#thumbs,
+#thumbs-sub {
+    position: fixed; //width: 100%;
+    //height:100%;
+    min-width: 1300px;
+    z-index: 999;
+}
+
+#thumbs .img,
+#thumbs-sub .img {
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+
+#thumbs-sub {
+    position: relative;
+}
+
+#thumbs-sub .img {
+    display: block;
+}
+
+#thumbs-sub #t1 {
+    left: 0px;
+}
+
+#thumbs-sub #t2 {
+    left: 220px;
+}
+
+#thumbs-sub #t3 {
+    left: 440px;
+}
+
+#thumbs-sub #t4 {
+    left: 0px;
+    top: 220px;
+}
+
+#thumbs-sub #t5 {
+    left: 220px;
+    top: 220px;
+}
+
+#thumbs-sub #t6 {
+    left: 440px;
+    top: 220px;
+}
+
+#thumbs .img:hover,
+#thumbs-sub .img:hover {
+    background-color: #ebff00;
+    opacity: 1;
+}
+
+.caption {
+    display: table;
+    width: 200px;
+    height: 600px;
+}
+
+.caption:hover {
+    margin-top: -200px;
+}
+
+.caption p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-size: 10pt;
+    padding: 18px;
+}
+
+.content {
+    width: 600px;
+    position: initial;
+    top: 100px;
+    left: 10px
+}
+
+#content {
+    height: 4000px;
+}
+
+.desc {
+    margin-top: 280px;
+}
+
+/*.sidebar {
+	position:absolute;
+	margin-left:-120px;
+}*/
+
+.sidebar {
+    padding: 20px;
+    width: 200px;
+    height: 140px;
+    margin-left: -136px;
+    /*background-color: rgba(163, 167, 172, 0.27);*/
+    color: #fff;
+}
+
+.sidebar h3 {
+    margin: 0;
+}
+
+.sidebar {
+    float: left;
+}
+
+/* The sticky */
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+}
+
+.mit {
+    position: relative;
+    top: 22px;
+    left: 650px;
+    opacity: .5;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.sal-sm {
+    position: relative;
+    top: -35px;
+    left: 0px;
+    opacity: .5;
+    width: 100px;
+    margin-left: -80px;
+}
+
+.mit:hover,
+.sal-sm:hover {
+    opacity: 1;
+}
+
+.credit {
+    position: absolute;
+    left: 200px;
+    width: 468px;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 2em;
+}
+
+.credit-mit {
+    position: absolute;
+    left: 200px;
+    margin-top: 100px;
+}
+
+.credit-mit a {
+    opacity: .5;
+}
+
+.credit-mit a:hover {
+    opacity: 1;
+}
+
+.credit-mit p {
+    position: absolute;
+    width: 500px;
+    margin: 0 0 0 60px;
+    line-height: 1.2em;
+}
+
+.credit-mit .mit-logo {
+    margin-top: 3px;
+}
+
+.mit-logo-top {
+    position: absolute;
+    top: 70px;
+    left: 840px;
+    opacity: .5;
+}
+
+.mit-logo-top:hover {
+    opacity: 1;
+}
+
+#debug {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#swf {
+    margin-top: 2em;
+}
+
+#mp4 {
+    display: none;
+    margin-top: 2em;
+}
+
+.thumbnail {
+    transform: all 0.16s ease;
+}
+
+.thumbnail:hover {
+    position: relative;
+    top: -25px;
+    left: 35px;
+    width: 800px;
+    height: auto;
+    display: block;
+    z-index: 999;
+    -webkit-transition: all 240ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 240ms ease-in-out;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 240ms ease-in-out;
+    -moz-transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+
+.thumbnailvertical {
+    transform: all 0.16s ease;
+}
+
+.thumbnailvertical:hover {
+    position: relative;
+    top: -25px;
+    left: 35px;
+    width: 600px;
+    height: auto;
+    display: block;
+    z-index: 999;
+    -webkit-transition: all 240ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 240ms ease-in-out;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 240ms ease-in-out;
+    -moz-transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+
+/*mobile optimization*/
+
+@media screen and (max-width: 894px) {
+    #wrapper,
+    #upper,
+    #projects,
+    #footer,
+    #sidebar,
+    content {
+        float: none;
+        width: auto;
+    }
+    #subtitle,
+    #share {
+        display: none;
+    }
+        {
+        font-size: 1.75em;
+    }
+}
